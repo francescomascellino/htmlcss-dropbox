@@ -118,6 +118,7 @@ nav a {
 
 section.hero {
     background-color: var(--db-hero);
+    height: 90%;
 }
 
 .jumbo_container {
@@ -127,7 +128,7 @@ section.hero {
 }
 
 img.jumbo {
-    width: 110%;
+    width: 100%;
     height: 110%;
 }
 
