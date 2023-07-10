@@ -28,8 +28,6 @@ body {
     width: calc(100% / 12 * 4);
 }
 
-
-
 .col-4 {
     width: calc(100% / 12 * 4 - 2rem);
 }
@@ -70,30 +68,41 @@ section {
 
 /* #region DEBUG */
 
-/* .debug,
-.debug .container,
-.debug .section {
-    border: 1px solid red;
-} */
+.debug div {
+    border: 1px dashed blue;
+}
 
-/* .debug [class^="col-"] {
-    border: 1px solid dashed rgb(162, 130, 238);
-} */
+.debug header {
+    border: 1px solid green;
+}
 
+.debu nav {
+    border: 1px solid violet;
+}
 
-/* .debug [class*='_menu'] {
-    border: 1px dashed black;
-} */
+.debub img {
+    border: 1px solid yellow;
+}
 
-/* .debug a {
-    border: 1px solid blue;
-} */
+.debug a {
+    border: 1px solid chocolate
+}
 
-/* .debug img {
-    border: #ffe710 solid 1px;
-} */
+.debug span {
+    background-color: rgba(95, 158, 160, 0.5);
+}
 
+.debug section {
+    border: 1px dashed black
+}
 
+.debug [class*="col-"] {
+    background-color: rgba(255, 0, 34, 0.5);
+}
+
+.debug .plan_card {
+    background-color: rgba(172, 255, 47, 0.5);
+}
 
 /* #endregion DEBUG */
 
@@ -195,7 +204,7 @@ img.jumbo {
 
 /* #endregion HERO */
 
-/* region SUBSCRIPTION PLANS */
+/* #region SUBSCRIPTION PLANS */
 
 .subscription,
 .plan_card {
@@ -294,13 +303,25 @@ button.sales_dpt {
 
 /* #region PARTNESHIP */
 
-section.partnership {
-    padding-bottom: 2rem;
-}
-
 .partner_img {
     width: 100%;
-    box-sizing: border-box;
+    display: block;
+}
+
+.btn-white {
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.partnership .col-4 h2,
+.partnership .col-4 p,
+.partnership .col-4 button {
+    margin-top: 2rem;
+}
+
+.partnership .col-4 p,
+.partnership .col-4 button {
+    margin-top: 1rem;
 }
 
 /* #endregion PARTNERSHIP */
