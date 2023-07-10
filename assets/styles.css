@@ -1,4 +1,4 @@
-/* region GLOBAL RULES */
+/* #region GLOBAL RULES */
 
 * {
     box-sizing: border-box;
@@ -24,8 +24,12 @@ body {
     max-width: 1770px;
 }
 
-.col-4 {
+.col-4-hero {
     width: calc(100% / 12 * 4);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4 - 2rem);
 }
 
 .col-8 {
@@ -50,7 +54,12 @@ button {
     margin-bottom: 1.5rem;
 }
 
-/* endregion GLOBAL RULES */
+.list_item {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* #endregion GLOBAL RULES */
 
 /* #region DEBUG */
 
@@ -94,6 +103,10 @@ button {
 
 .just_cent {
     justify-content: center;
+}
+
+.no_wrap {
+    flex-wrap: nowrap;
 }
 
 /* #endregion UTILITIES */
@@ -178,9 +191,8 @@ img.jumbo {
 /* region SUBSCRIPTION PLANS */
 
 .subscription,
-.plan_card,
-i {
-    font-size: .8rem;
+.plan_card {
+    font-size: 0.9rem;
 }
 
 /* CONTROLLARE SE TUTTI GLI H2 SEGUONO QUESTE REGOLE */
@@ -196,7 +208,7 @@ input[name="plan"] {
 }
 
 .plan.col-4 {
-    width: calc(100% / 12 * 4 - 2rem);
+    /* width: calc(100% / 12 * 4 - 2rem); */
     border: 1px solid var(--db-border);
     border-radius: 5px;
 }
@@ -217,9 +229,15 @@ input[name="plan"] {
     margin: 1rem 0;
 }
 
+.list_item {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
 .plan_card button {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    font-size: 0.9rem;
 }
 
 .block {
@@ -227,6 +245,15 @@ input[name="plan"] {
     width: 2rem;
     border-top: 1px solid var(--db-border);
     margin-top: 2rem;
+}
+
+.features {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.ico_check {
+    color: var(--db-btn);
 }
 
 /* #endregion SUBSCRIPTION PLANS */
