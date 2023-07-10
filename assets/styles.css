@@ -63,15 +63,15 @@ button {
 
 /* #region DEBUG */
 
-.debug,
+/* .debug,
 .debug .container,
 .debug .section {
     border: 1px solid red;
-}
+} */
 
-.debug [class^="col-"] {
+/* .debug [class^="col-"] {
     border: 1px solid dashed rgb(162, 130, 238);
-}
+} */
 
 
 /* .debug [class*='_menu'] {
@@ -257,3 +257,13 @@ input[name="plan"] {
 }
 
 /* #endregion SUBSCRIPTION PLANS */
+
+/* #region CONTACT SALES CARD */
+
+.contact_sales {
+    border: 1px solid var(--db-border);
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+/* #endregion CONTACT SALES CARD */
