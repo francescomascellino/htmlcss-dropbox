@@ -17,12 +17,22 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.container {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 1770px;
+}
+
 .col-4 {
     width: calc(100% / 12 * 4);
 }
 
 .col-8 {
     width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: 100%;
 }
 
 button {
@@ -43,10 +53,16 @@ button {
 
 /* #region DEBUG */
 
-/* .debug,
-.debug .container {
+.debug,
+.debug .container,
+.debug .section {
     border: 1px solid red;
-} */
+}
+
+.debug [class^="col-"] {
+    border: 1px solid dashed rgb(162, 130, 238);
+}
+
 
 /* .debug [class*='_menu'] {
     border: 1px dashed black;
