@@ -43,22 +43,22 @@ button {
 
 /* #region DEBUG */
 
-.debug,
+/* .debug,
 .debug .container {
     border: 1px solid red;
-}
+} */
 
-.debug [class*='_menu'] {
+/* .debug [class*='_menu'] {
     border: 1px dashed black;
-}
+} */
 
-.debug a {
+/* .debug a {
     border: 1px solid blue;
-}
+} */
 
-.debug img {
+/* .debug img {
     border: #ffe710 solid 1px;
-}
+} */
 
 
 
@@ -118,7 +118,8 @@ nav a {
 
 section.hero {
     background-color: var(--db-hero);
-    height: 90%;
+    height: 100%;
+    padding-bottom: 1rem;
 }
 
 .jumbo_container {
@@ -127,9 +128,16 @@ section.hero {
     max-width: 1770px;
 }
 
+.img_container {
+    position: relative;
+}
+
 img.jumbo {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 110%;
+    height: auto;
 }
 
 .jumbo_container h1 {
