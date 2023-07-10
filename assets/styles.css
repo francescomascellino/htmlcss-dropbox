@@ -176,13 +176,22 @@ img.jumbo {
 
 /* region SUBSCRIPTION PLANS */
 
-.container {
-    gap: 2rem;
+.subscription,
+.plan_card,
+i {
+    font-size: .8rem;
 }
 
-.col-4 {
-    width: calc(100% / 12 * 4 - 2rem);
+.plan_card .price {
+    display: block;
+    margin: 1rem 0;
+}
 
+.plan_cat {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem;
 }
 
 .col-12 h2 {
@@ -196,11 +205,15 @@ input[name="plan"] {
     margin: 2rem 1rem;
 }
 
-.plan_card {
-    padding: 1rem;
+.plan.col-4 {
+    width: calc(100% / 12 * 4 - 2rem);
     border: 1px solid lightgray;
     border-radius: 5px;
-    font-size: 0.9rem;
+}
+
+.plan_card {
+    padding: 1rem;
+
 }
 
 .plan_card button {
