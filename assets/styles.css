@@ -125,6 +125,9 @@ img.jumbo {
 
 .jumbo_container h1 {
     width: 100%;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 3rem 0;
 }
 
 /* #endregion HERO */
