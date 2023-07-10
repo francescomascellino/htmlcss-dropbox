@@ -173,3 +173,38 @@ img.jumbo {
 }
 
 /* #endregion HERO */
+
+/* region SUBSCRIPTION PLANS */
+
+.container {
+    gap: 2rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4 - 2rem);
+
+}
+
+.col-12 h2 {
+    margin-top: 8rem;
+    padding: 3rem 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+input[name="plan"] {
+    margin: 2rem 1rem;
+}
+
+.plan_card {
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.plan_card button {
+    width: 100%;
+}
+
+/* #endregion SUBSCRIPTION PLANS */
