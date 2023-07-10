@@ -14,11 +14,20 @@ body {
 
 /* #region DEBUG */
 
-.debug * {
+.debug {
     border: 1px solid red;
-    min-height: 2rem;
-    min-width: 2rem;
 }
+
+.debug [class*='_menu'] {
+    background-color: green;
+    border: 1px dashed black;
+}
+
+.debug a {
+    border: 1px solid blue;
+}
+
+
 
 /* #endregion DEBUG */
 
@@ -29,4 +38,30 @@ body {
     flex-wrap: wrap;
 }
 
+.space_btw {
+    justify-content: space-between;
+}
+
 /* #endregion UTILITIES */
+
+/* #region HEADER AND NAVBAR */
+
+.logo {
+    padding: 0.5rem;
+}
+
+.right_menu {}
+
+[class*='_menu'] {
+    align-items: center;
+    gap: 1rem;
+}
+
+a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+}
+
+
+
+/* #endregion HEADER AND NAVBAR */
