@@ -11,6 +11,7 @@
     --db-dark: black;
     --db-btn: #0061ff;
     --db-hero: #b4d0e7;
+    --db-border: lightgray;
 }
 
 body {
@@ -196,7 +197,7 @@ input[name="plan"] {
 
 .plan.col-4 {
     width: calc(100% / 12 * 4 - 2rem);
-    border: 1px solid lightgray;
+    border: 1px solid var(--db-border);
     border-radius: 5px;
 }
 
@@ -207,7 +208,7 @@ input[name="plan"] {
 .plan_cat {
     display: block;
     text-align: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--db-border);
     padding: 0.5rem;
 }
 
@@ -221,6 +222,11 @@ input[name="plan"] {
     margin: 2rem 0;
 }
 
-
+.block {
+    height: 2rem;
+    width: 2rem;
+    border-top: 1px solid var(--db-border);
+    margin-top: 2rem;
+}
 
 /* #endregion SUBSCRIPTION PLANS */
