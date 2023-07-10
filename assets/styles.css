@@ -6,8 +6,21 @@
     margin: 0;
 }
 
+:root {
+    --db-light: white;
+    --db-dark: black;
+    --db-btn: #0061ff;
+    --db-hero: #b4d0e7;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: unset;
+    padding: .5rem;
 }
 
 /* endregion GLOBAL RULES */
@@ -19,7 +32,6 @@ body {
 }
 
 .debug [class*='_menu'] {
-    background-color: green;
     border: 1px dashed black;
 }
 
@@ -46,6 +58,12 @@ body {
 
 /* #region HEADER AND NAVBAR */
 
+nav {
+    padding: 0 1rem;
+    background-color: var(--db-light);
+    font-size: 0.8rem;
+}
+
 .logo {
     padding: 0.5rem;
 }
@@ -57,11 +75,18 @@ body {
     gap: 1rem;
 }
 
-a {
+nav a {
     padding: 1rem 0.5rem;
     text-decoration: none;
+    color: var(--db-dark);
 }
 
+.nav_start {
+    background-color: var(--db-btn);
+    color: var(--db-light);
+    border-radius: 2px;
+    padding: 0.2rem 0.5rem;
+}
 
 
 /* #endregion HEADER AND NAVBAR */
