@@ -31,6 +31,14 @@ button {
     padding: .5rem;
 }
 
+.btn-blue {
+    background-color: var(--db-btn);
+    color: var(--db-light);
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
 /* endregion GLOBAL RULES */
 
 /* #region DEBUG */
@@ -76,9 +84,8 @@ button {
 /* #region HEADER AND NAVBAR */
 
 nav {
-    padding: 0 1rem;
+    padding: 0 2rem;
     background-color: var(--db-light);
-    font-size: 0.8rem;
 }
 
 .logo {
@@ -93,7 +100,7 @@ nav {
 }
 
 nav a {
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     text-decoration: none;
     color: var(--db-dark);
 }
@@ -101,8 +108,8 @@ nav a {
 .nav_start {
     background-color: var(--db-btn);
     color: var(--db-light);
-    border-radius: 2px;
-    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
 }
 
 /* #endregion HEADER AND NAVBAR */
@@ -114,8 +121,9 @@ section.hero {
 }
 
 .jumbo_container {
-    width: 80%;
-    margin: auto;
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1770px;
 }
 
 img.jumbo {
@@ -125,9 +133,18 @@ img.jumbo {
 
 .jumbo_container h1 {
     width: 100%;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 5rem;
-    padding: 3rem 0;
+    padding: 4rem 0;
+}
+
+.jumbo_container p {
+    margin-bottom: 2rem
+}
+
+.arrow {
+    font-size: 3rem;
+    color: var(--db-dark);
 }
 
 /* #endregion HERO */
