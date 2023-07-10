@@ -182,18 +182,7 @@ i {
     font-size: .8rem;
 }
 
-.plan_card .price {
-    display: block;
-    margin: 1rem 0;
-}
-
-.plan_cat {
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid lightgray;
-    padding: 0.5rem;
-}
-
+/* CONTROLLARE SE TUTTI GLI H2 SEGUONO QUESTE REGOLE */
 .col-12 h2 {
     margin-top: 8rem;
     padding: 3rem 1rem;
@@ -213,11 +202,25 @@ input[name="plan"] {
 
 .plan_card {
     padding: 1rem;
+}
 
+.plan_cat {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem;
+}
+
+.plan_card .price {
+    display: block;
+    margin: 1rem 0;
 }
 
 .plan_card button {
     width: 100%;
+    margin: 2rem 0;
 }
+
+
 
 /* #endregion SUBSCRIPTION PLANS */
