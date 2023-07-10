@@ -28,13 +28,14 @@ body {
     width: calc(100% / 12 * 4);
 }
 
+
+
 .col-4 {
     width: calc(100% / 12 * 4 - 2rem);
 }
 
 .col-8 {
-    /* width: calc(100% / 12 * 8); */
-    width: calc(100% / 12 * 8 - 2rem);
+    width: calc(100% / 12 * 8);
 }
 
 .col-12 {
@@ -273,16 +274,16 @@ input[name="plan"] {
 }
 
 .col-8 .plan_card {
-    padding-top: 0;
+    padding: 0;
 }
 
 .custom_plan {
-    padding: 0.5rem;
-    gap: 1rem;
+    padding: 1rem;
 }
 
 button.sales_dpt {
     width: 100%;
+    font-size: 0.9rem;
 }
 
 /* #endregion CONTACT SALES CARD */
