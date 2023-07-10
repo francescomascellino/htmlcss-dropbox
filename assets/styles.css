@@ -1,0 +1,30 @@
+/* region GLOBAL RULES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* endregion GLOBAL RULES */
+
+/* #region DEBUG */
+
+.debug {
+    border: 1px solid red;
+}
+
+/* #endregion DEBUG */
+
+/* #region UTILITIES */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #endregion UTILITIES */
