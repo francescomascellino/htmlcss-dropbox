@@ -14,8 +14,10 @@ body {
 
 /* #region DEBUG */
 
-.debug {
+.debug * {
     border: 1px solid red;
+    min-height: 2rem;
+    min-width: 2rem;
 }
 
 /* #endregion DEBUG */
