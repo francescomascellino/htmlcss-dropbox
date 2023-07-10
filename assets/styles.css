@@ -192,6 +192,10 @@ img.jumbo {
 
 /* region SUBSCRIPTION PLANS */
 
+.plans {
+    margin-bottom: 8rem;
+}
+
 .subscription,
 .plan_card {
     font-size: 0.9rem;
@@ -287,3 +291,16 @@ button.sales_dpt {
 }
 
 /* #endregion CONTACT SALES CARD */
+
+/* #region PARTNESHIP */
+
+section.partnership {
+    padding-bottom: 2rem;
+}
+
+.partner_img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* #endregion PARTNERSHIP */
