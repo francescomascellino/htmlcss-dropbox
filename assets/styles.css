@@ -33,7 +33,8 @@ body {
 }
 
 .col-8 {
-    width: calc(100% / 12 * 8);
+    /* width: calc(100% / 12 * 8); */
+    width: calc(100% / 12 * 8 - 2rem);
 }
 
 .col-12 {
@@ -260,10 +261,28 @@ input[name="plan"] {
 
 /* #region CONTACT SALES CARD */
 
-.contact_sales {
+.col-12.contact_sales {
     border: 1px solid var(--db-border);
     border-radius: 5px;
     margin-top: 3rem;
+}
+
+.custom_solutions {
+    display: block;
+    margin: 3rem 0 1rem;
+}
+
+.col-8 .plan_card {
+    padding-top: 0;
+}
+
+.custom_plan {
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+button.sales_dpt {
+    width: 100%;
 }
 
 /* #endregion CONTACT SALES CARD */
