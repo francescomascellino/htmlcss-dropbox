@@ -251,13 +251,21 @@ section.plans {
 
 /* CONTROLLARE SE TUTTI GLI H2 SEGUONO QUESTE REGOLE */
 .col-12 h2 {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 input[name="plan"] {
-    margin: 2rem 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+label {
+    margin-right: 2rem;
+    font-size: 1rem;
 }
 
 .plan.col-4 {
@@ -371,6 +379,11 @@ input[name="plan"] {
     margin-bottom: 2rem;
 }
 
+.features .container>.col-12 h2 {
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
 .feature h3 {
     margin-bottom: 2rem;
 }
@@ -380,6 +393,17 @@ input[name="plan"] {
 }
 
 /* #endregion FEATURES */
+
+/* #region DISCOVER */
+
+.discover .container>.col-8 h2 {
+    padding: 0;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* #endregion DISCOVER */
 
 /* #region FOOTER */
 
