@@ -66,6 +66,10 @@ body {
     width: calc(100% / 12 * 4 - 2rem);
 }
 
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
 .col-8 {
     width: calc(100% / 12 * 8);
 }
@@ -361,6 +365,7 @@ label {
 
 .btn-white {
     border: 1px solid var(--db-dark);
+    background-color: var(--db-light);
     color: var(--db-dark);
     font-size: 1rem;
     display: inline-block;
@@ -509,6 +514,19 @@ img.big_logo {
 
 .enterprise_trial {
     background-color: var(--db-d_azure);
+    padding: 8rem;
+}
+
+.enterprise_trial h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--db-bordeaux);
+}
+
+.enterprise_trial .btn-white {
+    text-align: center;
+    width: 100%;
+    border: none;
 }
 
 /* #endregion ENTERPRISES */
