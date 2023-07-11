@@ -131,6 +131,16 @@ p {
     --db-btn: #0061ff;
     --db-hero: #b4d0e7;
     --db-border: lightgray;
+    --db-l_green: #a2d39b;
+    --db-l_greem-border: #d1e9cd;
+    --db-bordeaux: #61082b;
+    --db-azure: #0093ce;
+    --db-red: #ff1c1c;
+    --db-d_red: #d5001f;
+    --db-d_azure: #b4d0e7;
+    --db-d_blue: #0d2481;
+    --db-yellow: #ffd830;
+    --db-featured: #f5f5f5;
 }
 
 /* #endregion VARIABLES */
@@ -420,25 +430,85 @@ label {
 .enterprise_sm {
     width: 50%;
     aspect-ratio: 1;
-    background-color: blanchedalmond;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.enterprise_sm svg {
+    color: var(--db-light);
+    width: 50%;
+    height: auto;
 }
 
 .enterprise_sm img {
     color: var(--db-light);
     width: 50%;
     height: auto;
+    filter: invert();
 }
 
-.ent_logo {
-    color: var(--db-light);
+.featured_ent {
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--db-featured);
+}
+
+img.big_logo {
+    width: 50%;
+    display: block;
+}
+
+.ent_block {
+    height: 2.5rem;
+    width: 6rem;
+    border-top: 1px solid var(--db-border);
+    margin-top: 2.5rem;
+}
+
+.featured_ent p {
+    margin-bottom: 3rem;
 }
 
 .enterprise_trial {
     width: 100%;
-    height: 250px;
+}
+
+.l_green {
+    background-color: var(--db-l_green);
+    border: 15px solid var(--db-l_greem-border);
+}
+
+.bordeaux {
+    background-color: var(--db-bordeaux);
+}
+
+.azure {
+    background-color: var(--db-azure);
+}
+
+.red {
+    background-color: var(--db-red);
+}
+
+.d_red {
+    background-color: var(--db-d_red);
+}
+
+.d_azure {
+    background-color: var(--db-azure);
+}
+
+.d_blue {
+    background-color: var(--db-d_blue);
+}
+
+.yellow {
+    background-color: var(--db-yellow);
+}
+
+.enterprise_trial {
+    background-color: var(--db-d_azure);
 }
 
 /* #endregion ENTERPRISES */
