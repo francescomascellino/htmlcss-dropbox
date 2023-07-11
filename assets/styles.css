@@ -100,9 +100,17 @@ button {
     padding-bottom: 8rem;
 }
 
+.p8 {
+    padding: 4rem 0;
+}
+
 .list_item {
     gap: 0.5rem;
     margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 /* #endregion GLOBAL RULES */
@@ -185,6 +193,7 @@ section.hero {
     margin: 0 auto;
     max-width: 1770px;
     height: 750px;
+    padding-top: 4rem;
 }
 
 .img_container {
