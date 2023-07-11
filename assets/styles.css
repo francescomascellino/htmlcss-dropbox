@@ -535,12 +535,30 @@ img.big_logo {
 
 .topic {
     width: 100%;
-
     border-bottom: 2px solid var(--db-border);
 }
 
 .topic:first-of-type {
     border-top: 2px solid var(--db-border);
+}
+
+.answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in;
+}
+
+.drop_ico {
+    transition: transform 0.3s ease-in;
+}
+
+.topic:hover .answer {
+    height: 3rem;
+    overflow: auto;
+}
+
+.topic:hover .drop_ico {
+    transform: rotate(180deg);
 }
 
 /* #endregion FAQ */
