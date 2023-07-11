@@ -74,7 +74,14 @@ body {
 }
 
 /* TRASFORMARE buttons IN a TAGS? */
+/* AGGIUNGERE COLORE CHE SCHIARISCE ALL'HOVER */
 button {
+    border: none;
+    background-color: unset;
+    padding: .5rem;
+}
+
+.btn {
     border: none;
     background-color: unset;
     padding: .5rem;
@@ -135,14 +142,11 @@ section {
 
 /* #region HEADER AND NAVBAR */
 
-nav {
-    padding: 0 2rem;
-    background-color: var(--db-light);
-}
+/* HEADER STICKY */
 
-/* TRASFORMARE IL LOGO IN UN a TAG? */
-.logo {
-    padding: 0.5rem;
+nav {
+    padding: 0 1rem;
+    background-color: var(--db-light);
 }
 
 .right_menu {}
@@ -153,16 +157,18 @@ nav {
 }
 
 nav a {
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.5rem;
     text-decoration: none;
     color: var(--db-dark);
 }
+
+/* AGGIUNGERE BORDO SOTTO GLI a TAGS NELLA NAV ALL'HOVER */
 
 .nav_start {
     background-color: var(--db-btn);
     color: var(--db-light);
     font-size: 1rem;
-    padding: 0.5rem 0.8rem;
+    padding: 0.3rem 1rem;
 }
 
 /* #endregion HEADER AND NAVBAR */
@@ -334,3 +340,5 @@ footer {
 }
 
 /* #endregion FOOTER */
+
+/* FRECCE CHE SI RUOTANO E TESTO CHE APPARE NELLE SEZIONI A SCOMPARSA */
