@@ -74,21 +74,25 @@ body {
     width: 100%;
 }
 
-/* TRASFORMARE buttons IN a TAGS? */
+/* TRASFORMARE buttons IN a TAGS */
+
 /* AGGIUNGERE COLORE CHE SCHIARISCE ALL'HOVER */
-button {
+/* button {
     border: none;
     background-color: unset;
     padding: .5rem;
-}
+} */
 
 .btn {
+    /* padding: 0.5rem;
     border: none;
     background-color: unset;
-    padding: .5rem;
+    padding: .5rem; */
 }
 
 .btn-blue {
+    display: inline-block;
+    text-decoration: none;
     background-color: var(--db-btn);
     color: var(--db-light);
     font-size: 1rem;
@@ -102,6 +106,10 @@ button {
 
 .p8 {
     padding: 4rem 0;
+}
+
+.list_container {
+    min-height: 220px;
 }
 
 .list_item {
@@ -229,7 +237,8 @@ img.jumbo {
 /* #region SUBSCRIPTION PLANS */
 
 .subscription,
-.plan_card {
+.plan_card,
+.plan_card .btn-blue {
     font-size: 0.9rem;
 }
 
@@ -310,9 +319,10 @@ input[name="plan"] {
     padding: 1rem;
 }
 
-button.sales_dpt {
+.btn_large {
     width: 100%;
     font-size: 0.9rem;
+    text-align: center;
 }
 
 /* #endregion CONTACT SALES CARD */
