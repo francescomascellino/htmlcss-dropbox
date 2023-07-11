@@ -200,27 +200,27 @@ section.hero {
     width: 65%;
     margin: 0 auto;
     max-width: 1770px;
-    height: 750px;
-    padding-top: 4rem;
+    /* height: 550px; */
+    padding: 4rem 0;
 }
 
 .img_container {
-    /* position: relative; */
+    position: relative;
 }
 
 img.jumbo {
-    /* position: absolute;
+    position: absolute;
     top: 0;
-    left: 0; */
+    left: 0;
     width: 100%;
-    /* height: auto; */
+    height: auto;
 }
 
 .jumbo_container h1 {
     width: 100%;
     font-weight: 700;
-    font-size: 5rem;
-    /* padding: 4rem 0; */
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .jumbo_container p {
