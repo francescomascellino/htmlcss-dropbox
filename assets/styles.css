@@ -48,11 +48,12 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
 }
 
 .container {
     width: 50%;
-    margin: 0 auto;
+    margin: auto;
     max-width: 1770px;
 }
 
@@ -72,14 +73,11 @@ body {
     width: 100%;
 }
 
+/* TRASFORMARE buttons IN a TAGS? */
 button {
     border: none;
     background-color: unset;
     padding: .5rem;
-}
-
-section {
-    margin-bottom: 8rem;
 }
 
 .btn-blue {
@@ -88,6 +86,11 @@ section {
     font-size: 1rem;
     padding: 0.7rem;
     margin-bottom: 1.5rem;
+}
+
+/* DARE PADDING TOP */
+section {
+    margin-bottom: 8rem;
 }
 
 .list_item {
@@ -137,6 +140,7 @@ nav {
     background-color: var(--db-light);
 }
 
+/* TRASFORMARE IL LOGO IN UN a TAG? */
 .logo {
     padding: 0.5rem;
 }
