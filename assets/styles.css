@@ -405,6 +405,32 @@ label {
 
 /* #endregion DISCOVER */
 
+/* #region ENTERPRISES */
+
+.enterprises {
+    width: 100%;
+}
+
+.enterprise_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+}
+
+.enterprise_sm {
+    width: 50%;
+    aspect-ratio: 1;
+    background-color: blanchedalmond;
+}
+
+.enterprise_trial {
+    width: 100%;
+    height: 250px;
+}
+
+/* #endregion ENTERPRISES */
+
 /* #region FOOTER */
 
 footer {
