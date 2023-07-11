@@ -413,8 +413,7 @@ label {
 
 .enterprise_box {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
     width: calc(100% / 3);
 }
 
@@ -422,6 +421,19 @@ label {
     width: 50%;
     aspect-ratio: 1;
     background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterprise_sm img {
+    color: var(--db-light);
+    width: 50%;
+    height: auto;
+}
+
+.ent_logo {
+    color: var(--db-light);
 }
 
 .enterprise_trial {
