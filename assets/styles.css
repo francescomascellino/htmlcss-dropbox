@@ -531,6 +531,20 @@ img.big_logo {
 
 /* #endregion ENTERPRISES */
 
+/* #region FAQ */
+
+.topic {
+    width: 100%;
+
+    border-bottom: 2px solid var(--db-border);
+}
+
+.topic:first-of-type {
+    border-top: 2px solid var(--db-border);
+}
+
+/* #endregion FAQ */
+
 /* #region FOOTER */
 
 footer {
