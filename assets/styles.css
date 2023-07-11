@@ -536,6 +536,7 @@ img.big_logo {
 .topic {
     width: 100%;
     border-bottom: 2px solid var(--db-border);
+    padding: 2rem;
 }
 
 .topic:first-of-type {
@@ -555,6 +556,7 @@ img.big_logo {
 .topic:hover .answer {
     height: 3rem;
     overflow: auto;
+    margin-top: 1rem;
 }
 
 .topic:hover .drop_ico {
