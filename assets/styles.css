@@ -37,6 +37,10 @@
     background-color: rgba(172, 255, 47, 0.5);
 }
 
+.debug h2 {
+    border: 1px solid yellow;
+}
+
 /* #endregion DEBUG */
 
 /* #region GLOBAL RULES */
@@ -56,26 +60,6 @@ body {
     width: 50%;
     margin: auto;
     max-width: 1770px;
-}
-
-.col-4-hero {
-    width: calc(100% / 12 * 4);
-}
-
-.col-4 {
-    width: calc(100% / 12 * 4 - 2rem);
-}
-
-.col-6 {
-    width: calc(100% / 12 * 6);
-}
-
-.col-8 {
-    width: calc(100% / 12 * 8);
-}
-
-.col-12 {
-    width: 100%;
 }
 
 .btn-blue {
@@ -119,14 +103,6 @@ body {
     background-color: var(--db-border);
 }
 
-.pb-8 {
-    padding-bottom: 8rem;
-}
-
-.p8 {
-    padding: 4rem 0;
-}
-
 .list_container {
     min-height: 220px;
 }
@@ -138,6 +114,11 @@ body {
 
 p {
     line-height: 1.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 /* #endregion GLOBAL RULES */
@@ -182,6 +163,34 @@ p {
 
 .no_wrap {
     flex-wrap: nowrap;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.p8 {
+    padding: 4rem 0;
+}
+
+.col-4-hero {
+    width: calc(100% / 12 * 4);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4 - 2rem);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: 100%;
 }
 
 /* #endregion UTILITIES */
@@ -257,7 +266,7 @@ img.jumbo {
 
 .jumbo_container h1 {
     width: 100%;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 4rem;
     margin-bottom: 2.5rem;
 }
@@ -285,11 +294,8 @@ section.plans {
     padding-top: 4rem;
 }
 
-/* CONTROLLARE SE TUTTI GLI H2 SEGUONO QUESTE REGOLE */
-.col-12 h2 {
+.subscription.col-12 h2 {
     padding: 3rem 0;
-    font-weight: 700;
-    font-size: 2rem;
 }
 
 input[name="plan"] {
@@ -380,6 +386,7 @@ label {
 }
 
 .partnership .col-4 h2 {
+    font-size: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -405,7 +412,6 @@ label {
 }
 
 .features .container>.col-12 h2 {
-    padding: 0;
     margin-bottom: 2rem;
 }
 
@@ -422,10 +428,7 @@ label {
 /* #region DISCOVER */
 
 .discover .container>.col-8 h2 {
-    padding: 0;
     margin-bottom: 2rem;
-    font-weight: 700;
-    font-size: 2rem;
 }
 
 /* #endregion DISCOVER */
@@ -528,8 +531,6 @@ img.big_logo {
 }
 
 .enterprise_trial h2 {
-    font-weight: 700;
-    font-size: 2rem;
     color: var(--db-bordeaux);
 }
 
