@@ -546,24 +546,42 @@ img.big_logo {
     border-top: 2px solid var(--db-border);
 }
 
-.answer {
-    height: 0;
-    overflow: hidden;
-    transition: height 0.3s ease-in;
-}
-
 .drop_ico {
     transition: transform 0.3s ease-in;
 }
 
-.topic:hover .answer {
-    height: 3rem;
-    overflow: auto;
-    margin-top: 1rem;
-}
-
 .topic:hover .drop_ico {
     transform: rotate(180deg);
+}
+
+.answer {
+
+    height: 0;
+    overflow: hidden;
+    /* VECCHIA TRANSIZIONE AD ALTEZZA FISSA */
+    /* transition: height 0.3s ease-in; */
+    /* animation: answer_pop_up 0.3s ease-in backwards reverse; */
+}
+
+.topic:hover .answer {
+    /* VECCHIA TRANSIZIONE AD ALTEZZA FISSA */
+    /* height: 3rem;
+    overflow: auto;
+    margin-top: 1rem; */
+    animation: answer_pop_up 0.3s ease-in forwards;
+}
+
+@keyframes answer_pop_up {
+    0% {
+        margin-top: 1rem;
+        height: 0%;
+    }
+
+    100% {
+        margin-top: 1rem;
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 /* #endregion FAQ */
