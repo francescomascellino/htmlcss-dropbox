@@ -440,14 +440,13 @@ label {
 }
 
 .enterprise_box {
-    display: flex;
     width: calc(100% / 3);
+    aspect-ratio: 1 /1;
 }
 
 .enterprise_sm {
     width: 50%;
-    aspect-ratio: 1;
-    display: flex;
+    aspect-ratio: 1 /1;
     align-items: center;
     justify-content: center;
 }
@@ -477,7 +476,7 @@ img.big_logo {
     margin-top: 2.5rem;
 }
 
-.featured_ent p {
+.featured_ent blockquote {
     margin-bottom: 3rem;
 }
 
