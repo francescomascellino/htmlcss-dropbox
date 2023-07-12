@@ -252,18 +252,13 @@ section.hero {
     width: 65%;
     margin: 0 auto;
     max-width: 1770px;
-    /* height: 550px; */
+    height: 650px;
     padding: 4rem 0;
-}
-
-.img_container {
-    position: relative;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 
 img.jumbo {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: auto;
 }
@@ -654,5 +649,3 @@ footer span {
 /* IMMAGINE HEADER CON MARGIN -1REM e HEIGHT FISSA */
 
 /* SPAZIO TRA GLI ELEMENTI DANDO MARGINI NEGATIVI AL CONTENITORE */
-
-/* LA DIMENSIONE DEGLI ANCHOR TAG CAMBIA QUANDO IL BORDO SPUNTA ALL'HOVER */
