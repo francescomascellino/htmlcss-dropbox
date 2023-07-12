@@ -441,7 +441,6 @@ label {
 
 .enterprise_box {
     display: flex;
-
     width: calc(100% / 3);
 }
 
@@ -453,12 +452,6 @@ label {
     justify-content: center;
 }
 
-.enterprise_sm svg {
-    color: var(--db-light);
-    width: 50%;
-    height: auto;
-}
-
 .enterprise_sm img {
     color: var(--db-light);
     width: 50%;
@@ -468,7 +461,7 @@ label {
 
 .featured_ent {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: var(--db-featured);
 }
 
