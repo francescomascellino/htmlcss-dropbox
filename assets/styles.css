@@ -220,7 +220,11 @@ nav a {
     padding: 1.5rem 0.5rem;
     text-decoration: none;
     color: var(--db-dark);
-    transition: border 0.1s ease-in;
+    transition: border 0.2s ease-in;
+}
+
+nav a.borded {
+    border-bottom: 2px solid transparent;
 }
 
 nav a.borded:hover {
@@ -555,12 +559,12 @@ img.big_logo {
 }
 
 .answer {
-
     height: 0;
     overflow: hidden;
+    /* animation: answer_hide 0.3s ease-in forwards; */
     /* VECCHIA TRANSIZIONE AD ALTEZZA FISSA */
     /* transition: height 0.3s ease-in; */
-    /* animation: answer_pop_up 0.3s ease-in backwards reverse; */
+
 }
 
 .topic:hover .answer {
@@ -568,7 +572,7 @@ img.big_logo {
     /* height: 3rem;
     overflow: auto;
     margin-top: 1rem; */
-    animation: answer_pop_up 0.3s ease-in forwards;
+    animation: 0.3s answer_pop_up ease-in forwards;
 }
 
 @keyframes answer_pop_up {
@@ -580,6 +584,19 @@ img.big_logo {
     100% {
         margin-top: 1rem;
         height: 100%;
+        overflow: hidden;
+    }
+}
+
+@keyframes answer_hide {
+    0% {
+        margin-top: 1rem;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    100% {
+        height: 0%;
         overflow: hidden;
     }
 }
