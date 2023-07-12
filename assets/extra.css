@@ -1,0 +1,707 @@
+/* #region DEBUG */
+
+.debug div {
+    border: 1px dashed blue;
+}
+
+.debug header {
+    border: 1px solid green;
+}
+
+.debu nav {
+    border: 1px solid violet;
+}
+
+.debub img {
+    border: 1px solid yellow;
+}
+
+.debug a {
+    border: 1px solid chocolate
+}
+
+.debug span {
+    background-color: rgba(95, 158, 160, 0.5);
+}
+
+.debug section {
+    border: 1px dashed black;
+    background-color: azure;
+}
+
+.debug [class*="col-"] {
+    background-color: rgba(255, 0, 34, 0.5);
+}
+
+.debug .plan_card {
+    background-color: rgba(172, 255, 47, 0.5);
+}
+
+.debug h2 {
+    border: 1px solid yellow;
+}
+
+/* #endregion DEBUG */
+
+/* #region GLOBAL RULES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    max-width: 1770px;
+}
+
+.btn-blue {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--db-btn);
+    color: var(--db-light);
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.2s ease-in;
+}
+
+.btn-blue:visited,
+.btn-blue:active {
+    color: var(--db-light);
+}
+
+.btn-blue:hover,
+.nav_start:hover {
+    background-color: var(--db-azure);
+}
+
+.btn-white {
+    border: 1px solid var(--db-dark);
+    background-color: var(--db-light);
+    color: var(--db-dark);
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7rem;
+    transition: background-color 0.2s ease-in;
+}
+
+.btn-white:visited,
+.btn-white:active {
+    color: var(--db-dark);
+}
+
+.btn-white:hover {
+    background-color: var(--db-border);
+}
+
+.list_container {
+    min-height: 220px;
+}
+
+.list_item {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* #endregion GLOBAL RULES */
+
+/* #region VARIABLES */
+
+:root {
+    --db-light: white;
+    --db-dark: black;
+    --db-btn: #0061ff;
+    --db-hero: #b4d0e7;
+    --db-border: lightgray;
+    --db-l_green: #a2d39b;
+    --db-l_greem-border: #d1e9cd;
+    --db-bordeaux: #61082b;
+    --db-azure: #0093ce;
+    --db-red: #ff1c1c;
+    --db-d_red: #d5001f;
+    --db-d_azure: #b4d0e7;
+    --db-d_blue: #0d2481;
+    --db-yellow: #ffd830;
+    --db-featured: #f5f5f5;
+    --db-lang-select: #999999;
+}
+
+/* #endregion VARIABLES */
+
+/* #region UTILITIES */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space_btw {
+    justify-content: space-between;
+}
+
+.just_cent {
+    justify-content: center;
+}
+
+.no_wrap {
+    flex-wrap: nowrap;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.p8 {
+    padding: 4rem 0;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-4-sm {
+    width: calc(100% / 12 * 4 - 2rem);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #endregion UTILITIES */
+
+/* #region HEADER AND NAVBAR */
+
+header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    padding: 0 1rem;
+    background-color: var(--db-light);
+    align-items: center;
+    height: 5rem;
+}
+
+[class*='_menu'] {
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 1.5rem 0.5rem;
+    text-decoration: none;
+    color: var(--db-dark);
+    transition: border 0.2s ease-in;
+}
+
+nav a.borded {
+    border-bottom: 2px solid transparent;
+}
+
+nav a.borded:hover {
+    border-bottom: 2px solid var(--db-d_blue);
+}
+
+.nav_start {
+    background-color: var(--db-btn);
+    color: var(--db-light);
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    transition: background-color 0.2s ease-in;
+}
+
+/* DROPDOWN MENU */
+
+#hover_menu {
+    position: relative;
+    padding: 1.5rem 0.5rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+
+.dropdown {
+    background-color: var(--db-d_blue);
+    color: white;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    animation-fill-mode: forwards;
+    visibility: collapse;
+
+}
+
+#hover_menu:hover .dropdown {
+    visibility: initial;
+    animation: 0.1s menu-pop linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menu-pop {
+    0% {
+        display: block;
+        width: 5%;
+        height: 5%;
+    }
+
+    25% {
+        display: block;
+        width: 25%;
+        height: 25%;
+    }
+
+    50% {
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+
+    75% {
+        display: block;
+        width: 75%;
+        height: 75%;
+    }
+
+    100% {
+        width: 200px;
+        display: block;
+
+        height: fit-content;
+    }
+}
+
+/* #endregion HEADER AND NAVBAR */
+
+/* #region HERO */
+
+section.hero {
+    background-color: var(--db-hero);
+    height: 100%;
+}
+
+.jumbo_container {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1770px;
+    height: 650px;
+    padding: 4rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+img.jumbo {
+    width: 100%;
+    height: auto;
+}
+
+.jumbo_container h1 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.jumbo_container p {
+    margin-bottom: 2rem
+}
+
+.arrow {
+    font-size: 3rem;
+    color: var(--db-dark);
+}
+
+/* #endregion HERO */
+
+/* #region SUBSCRIPTION PLANS */
+
+.subscription,
+.plan_card,
+.plan_card .btn-blue {
+    font-size: 0.9rem;
+}
+
+section.plans {
+    padding-top: 4rem;
+}
+
+.subscription.col-12 h2 {
+    padding: 6rem 0 3rem;
+}
+
+input[name="plan"] {
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-right: 0.5rem;
+}
+
+label {
+    margin-right: 2rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    vertical-align: top;
+}
+
+.plan.col-4-sm {
+    border: 1px solid var(--db-border);
+    border-radius: 5px;
+}
+
+.plan_card {
+    padding: 1rem;
+}
+
+.plan_cat {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid var(--db-border);
+    padding: 0.5rem;
+}
+
+.plan_card .price {
+    display: block;
+    margin: 1rem 0;
+}
+
+.block {
+    height: 2rem;
+    width: 2rem;
+    border-top: 1px solid var(--db-border);
+    margin-top: 2rem;
+}
+
+.characteristics {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.ico_check {
+    color: var(--db-btn);
+}
+
+/* #endregion SUBSCRIPTION PLANS */
+
+/* #region CONTACT SALES CARD */
+
+.col-12.contact_sales {
+    border: 1px solid var(--db-border);
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+.custom_solutions {
+    display: block;
+    margin: 3rem 0 1rem;
+}
+
+.col-8 .plan_card {
+    padding: 0;
+}
+
+.custom_plan {
+    padding: 1rem;
+}
+
+.btn_large {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* #endregion CONTACT SALES CARD */
+
+/* #region PARTNESHIP */
+
+.partner_img {
+    width: 100%;
+    display: block;
+}
+
+.partnership .col-4-sm h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.partnership .col-4-sm p {
+    margin-top: 1rem;
+}
+
+.partnership .col-4-sm a.btn-white {
+    margin-top: 2rem;
+}
+
+/* #endregion PARTNERSHIP */
+
+/* #region FEATURES */
+
+.feature {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.feature:hover {
+    box-shadow: 2px 2px 5px var(--db-border);
+}
+
+.features .container>.col-12 h2 {
+    margin-bottom: 2rem;
+}
+
+.feature h3 {
+    margin-bottom: 2rem;
+}
+
+.feature img {
+    width: 100%;
+}
+
+/* #endregion FEATURES */
+
+/* #region DISCOVER */
+
+.discover .container>.col-8 h2 {
+    margin-bottom: 2rem;
+}
+
+/* #endregion DISCOVER */
+
+/* #region ENTERPRISES */
+
+.enterprises {
+    width: 100%;
+}
+
+.enterprise_box {
+    width: calc(100% / 3);
+    aspect-ratio: 1 /1;
+}
+
+.enterprise_sm {
+    width: 50%;
+    aspect-ratio: 1 /1;
+    align-items: center;
+    justify-content: center;
+}
+
+.enterprise_sm img {
+    color: var(--db-light);
+    width: 50%;
+    height: auto;
+    filter: invert();
+}
+
+.featured_ent {
+    flex-direction: column;
+    padding: 2.5rem;
+    background-color: var(--db-featured);
+}
+
+img.big_logo {
+    width: 50%;
+    display: block;
+}
+
+.ent_block {
+    height: 2.5rem;
+    width: 6rem;
+    border-top: 1px solid var(--db-border);
+    margin-top: 2.5rem;
+}
+
+.featured_ent blockquote {
+    margin-bottom: 3rem;
+}
+
+.enterprise_trial {
+    width: 100%;
+}
+
+.l_green {
+    background-color: var(--db-l_green);
+    border: 15px solid var(--db-l_greem-border);
+}
+
+.bordeaux {
+    background-color: var(--db-bordeaux);
+}
+
+.azure {
+    background-color: var(--db-azure);
+}
+
+.red {
+    background-color: var(--db-red);
+}
+
+.d_red {
+    background-color: var(--db-d_red);
+}
+
+.d_azure {
+    background-color: var(--db-azure);
+}
+
+.d_blue {
+    background-color: var(--db-d_blue);
+}
+
+.yellow {
+    background-color: var(--db-yellow);
+}
+
+.enterprise_trial {
+    background-color: var(--db-d_azure);
+    padding: 8rem;
+}
+
+.enterprise_trial h2 {
+    color: var(--db-bordeaux);
+}
+
+.enterprise_trial .btn-white {
+    text-align: center;
+    width: 100%;
+    border: none;
+}
+
+/* #endregion ENTERPRISES */
+
+/* #region FAQ */
+
+.faq_title {
+    margin-bottom: 3rem;
+}
+
+.topic {
+    width: 100%;
+    border-bottom: 2px solid var(--db-border);
+    padding: 2rem;
+}
+
+.topic:first-of-type {
+    border-top: 2px solid var(--db-border);
+}
+
+.drop_ico {
+    transition: transform 0.3s ease-in;
+}
+
+.topic:hover .drop_ico {
+    transform: rotate(180deg);
+}
+
+.answer {
+    height: 0;
+    overflow: hidden;
+}
+
+.topic:hover .answer {
+    animation: 0.3s answer_pop_up ease-in forwards;
+}
+
+@keyframes answer_pop_up {
+    0% {
+        margin-top: 1rem;
+        height: 0%;
+    }
+
+    100% {
+        margin-top: 1rem;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+/* #endregion FAQ */
+
+/* #region FOOTER */
+
+footer {
+    background-color: var(--db-dark);
+    padding: 3rem 0 2rem;
+    color: var(--db-light);
+}
+
+.ftr_container {
+    width: 65%;
+    margin: 0 auto;
+    max-width: 1770px;
+}
+
+footer h3 {
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: var(--db-light);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.ftr_block {
+    height: 2.5rem;
+    width: 6rem;
+    border-top: 1px solid var(--db-border);
+    margin-top: 2.5rem;
+}
+
+footer span {
+    color: var(--db-lang-select);
+    font-size: 0.9rem;
+}
+
+/* #endregion FOOTER */
+
+/* -------------DA FIXARE------------- */
+
+/* SPAZIO TRA GLI ELEMENTI DANDO MARGINI NEGATIVI AL CONTENITORE */
