@@ -173,11 +173,15 @@ h2 {
     padding: 4rem 0;
 }
 
-.col-4-hero {
-    width: calc(100% / 12 * 4);
+.col-3 {
+    width: calc(100% / 12 * 3);
 }
 
 .col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-4-sm {
     width: calc(100% / 12 * 4 - 2rem);
 }
 
@@ -294,22 +298,23 @@ section.plans {
 }
 
 .subscription.col-12 h2 {
-    padding: 3rem 0;
+    padding: 6rem 0 3rem;
 }
 
 input[name="plan"] {
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-right: 0.5rem;
-    font-size: 1rem;
 }
 
 label {
     margin-right: 2rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    vertical-align: top;
 }
 
-.plan.col-4 {
+.plan.col-4-sm {
     border: 1px solid var(--db-border);
     border-radius: 5px;
 }
@@ -384,16 +389,16 @@ label {
     display: block;
 }
 
-.partnership .col-4 h2 {
+.partnership .col-4-sm h2 {
     font-size: 1.5rem;
     margin-top: 2rem;
 }
 
-.partnership .col-4 p {
+.partnership .col-4-sm p {
     margin-top: 1rem;
 }
 
-.partnership .col-4 a.btn-white {
+.partnership .col-4-sm a.btn-white {
     margin-top: 2rem;
 }
 
@@ -645,7 +650,5 @@ footer span {
 /* #endregion FOOTER */
 
 /* -------------DA FIXARE------------- */
-
-/* IMMAGINE HEADER CON MARGIN -1REM e HEIGHT FISSA */
 
 /* SPAZIO TRA GLI ELEMENTI DANDO MARGINI NEGATIVI AL CONTENITORE */
