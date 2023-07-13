@@ -161,6 +161,10 @@ h2 {
     justify-content: center;
 }
 
+.just_sp_arnd {
+    justify-content: space-around;
+}
+
 .no_wrap {
     flex-wrap: nowrap;
 }
@@ -257,7 +261,7 @@ ul {
 
 li a {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 2rem;
 }
 
@@ -268,49 +272,21 @@ li a {
     position: absolute;
     left: 0;
     top: 100%;
-    width: 200px;
-    animation-fill-mode: forwards;
-    visibility: collapse;
-
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.1s ease-in 0.2s;
 }
 
 #hover_menu:hover .dropdown {
-    visibility: initial;
-    animation: 0.1s menu-pop linear;
-    animation-fill-mode: forwards;
+    transform: scale(1);
 }
 
-@keyframes menu-pop {
-    0% {
-        display: block;
-        width: 5%;
-        height: 5%;
-    }
+.dropdown.why_db {
+    width: 12rem;
+}
 
-    25% {
-        display: block;
-        width: 25%;
-        height: 25%;
-    }
-
-    50% {
-        display: block;
-        width: 50%;
-        height: 50%;
-    }
-
-    75% {
-        display: block;
-        width: 75%;
-        height: 75%;
-    }
-
-    100% {
-        width: 200px;
-        display: block;
-
-        height: fit-content;
-    }
+.dropdown.functions_db {
+    width: 24rem;
 }
 
 /* #endregion HEADER AND NAVBAR */
@@ -701,7 +677,3 @@ footer span {
 }
 
 /* #endregion FOOTER */
-
-/* -------------DA FIXARE------------- */
-
-/* SPAZIO TRA GLI ELEMENTI DANDO MARGINI NEGATIVI AL CONTENITORE */
