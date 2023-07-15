@@ -484,10 +484,6 @@ img.big_logo {
     margin-bottom: 3rem;
 }
 
-.enterprise_trial {
-    width: 100%;
-}
-
 .l_green {
     background-color: var(--db-l_green);
     border: 15px solid var(--db-l_greem-border);
@@ -510,7 +506,7 @@ img.big_logo {
 }
 
 .d_azure {
-    background-color: var(--db-azure);
+    background-color: var(--db-d_azure);
 }
 
 .d_blue {
@@ -522,6 +518,7 @@ img.big_logo {
 }
 
 .enterprise_trial {
+    width: 100%;
     background-color: var(--db-d_azure);
     padding: 8rem;
 }
